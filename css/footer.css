@@ -6,7 +6,7 @@
 /* Контейнер для выстраивания блоков футера в линию */
 .footer-container {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 /* Левый блок: Логотип и текст */
