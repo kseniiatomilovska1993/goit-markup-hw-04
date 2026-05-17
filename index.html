@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Подключена минифицированная версия modern-normalize строго перед основными стилями -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght=700&family=Roboto:wght=400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Основной файл стилей в папке css (латиница, без пробелов) -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Семантический тег <header> -->
+    <header id="header" class="header">
+      <div class="container header-container">
+        <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#team">Team</a></li>
+            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
+
+        <address class="contacts">
+          <ul class="contact-list">
+            <li>
+              <a class="contact-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contact-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <!-- Семантический тег <main> -->
+    <main>
+      <!-- Секция Hero (задний фон будет задан через CSS) -->
+      <section id="hero" class="hero">
+        <div class="container">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <button class="hero-btn" type="button">Order Service</button>
+        </div>
+      </section>
+
+      <!-- Секция Our Features с добавленными иконками -->
+      <section id="features" class="section">
+        <div class="container">
+          <h2 class="sr-only">Our features</h2>
+          <ul class="features-list">
+            <li class="features-item">
+              <!-- Обертка для иконки преимущества. Размеры width/height прописаны в HTML -->
+              <div class="features-icon-container">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Strategy</h3>
+              <p class="features-text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="features-icon-container">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Punctuality</h3>
+              <p class="features-text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="features-icon-container">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Diligence</h3>
+              <p class="features-text">
+                Research and confirm brands with the strongest digital growth
+                opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="features-icon-container">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Technologies</h3>
+              <p class="features-text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Секция Our Team с иконками соцсетей -->
+      <section id="team" class="team-section section">
+        <div class="container">
+          <h2 class="section-title">Our Team</h2>
+          <ul class="team-list">
+            <li class="team-item">
+              <img src="./images/team1.jpg" alt="Mark Guerrero" width="264" />
+              <div class="team-card-text">
+                <h3 class="team-member-name">Mark Guerrero</h3>
+                <p class="team-member-role">Product Designer</p>
+                <!-- Список соцсетей для сотрудника -->
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-item">
+              <img src="./images/team2.jpg" alt="Tom Ford" width="264" />
+              <div class="team-card-text">
+                <h3 class="team-member-name">Tom Ford</h3>
+                <p class="team-member-role">Frontend Developer</p>
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-item">
+              <img src="./images/team3.jpg" alt="Camila Garcia" width="264" />
+              <div class="team-card-text">
+                <h3 class="team-member-name">Camila Garcia</h3>
+                <p class="team-member-role">Marketing</p>
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-item">
+              <img src="./images/team4.jpg" alt="Daniel Wilson" width="264" />
+              <div class="team-card-text">
+                <h3 class="team-member-name">Daniel Wilson</h3>
+                <p class="team-member-role">UI Designer</p>
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="" class="social-link">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Секция Our Portfolio с оверлеями для анимации (выезжают снизу при ховере) -->
+      <section id="portfolio" class="section">
+        <div class="container">
+          <h2 class="section-title">Our Portfolio</h2>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <!-- Контейнер-превью для картинки и скрытого текста оверлея -->
+              <div class="portfolio-thumb">
+                <img
+                  src="./images/portfolio-1.jpg"
+                  alt="Banking App"
+                  width="360"
+                />
+                <p class="portfolio-overlay">
+                  14 Easy Tips for Planning a Vacation & Selecting the Perfect
+                  Destination.
+                </p>
+              </div>
+              <div class="portfolio-card-text">
+                <h3 class="portfolio-project-title">Banking App</h3>
+                <p class="portfolio-project-type">App</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="portfolio-thumb">
+                <img
+                  src="./images/portfolio-2.jpg"
+                  alt="Cashless Payment"
+                  width="360"
+                />
+                <p class="portfolio-overlay">
+                  14 Easy Tips for Planning a Vacation & Selecting the Perfect
+                  Destination.
+                </p>
+              </div>
+              <div class="portfolio-card-text">
+                <h3 class="portfolio-project-title">Cashless Payment</h3>
+                <p class="portfolio-project-type">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="portfolio-thumb">
+                <img
+                  src="./images/portfolio-3.jpg"
+                  alt="Meditation App"
+                  width="360"
+                />
+                <p class="portfolio-overlay">
+                  14 Easy Tips for Planning a Vacation & Selecting the Perfect
+                  Destination.
+                </p>
+              </div>
+              <div class="portfolio-card-text">
+                <h3 class="portfolio-project-title">Meditation App</h3>
+                <p class="portfolio-project-type">App</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="portfolio-thumb">
+                <img
+                  src="./images/portfolio-4.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                />
+                <p class="portfolio-overlay">
+                  14 Easy Tips for Planning a Vacation & Selecting the Perfect
+                  Destination.
+                </p>
+              </div>
+              <div class="portfolio-card-text">
+                <h3 class="portfolio-project-title">Taxi Service</h3>
+                <p class="portfolio-project-type">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="portfolio-thumb">
+                <img
+                  src="./images/portfolio-5.jpg"
+                  alt="Screen Illustrations"
+                  width="360"
+                />
+                <p class="portfolio-overlay">
+                  14 Easy Tips for Planning a Vacation & Selecting the Perfect
+                  Destination.
+                </p>
+              </div>
+              <div class="portfolio-card-text">
+                <h3 class="portfolio-project-title">Screen Illustrations</h3>
+                <p class="portfolio-project-type">Design</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="portfolio-thumb">
+                <img
+                  src="./images/portfolio-6.jpg"
+                  alt="Online Courses"
+                  width="360"
+                />
+                <p class="portfolio-overlay">
+                  14 Easy Tips for Planning a Vacation & Selecting the Perfect
+                  Destination.
+                </p>
+              </div>
+              <div class="portfolio-card-text">
+                <h3 class="portfolio-project-title">Online Courses</h3>
+                <p class="portfolio-project-type">Marketing</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Семантический тег <footer> с двумя отдельными блоками (без gap, отступы будут маржинами) -->
+    <footer id="footer" class="footer">
+      <div class="container footer-container">
+        <!-- Блок 1: логотип + текст -->
+        <div class="footer-info">
+          <a class="logo footer-logo" href="./index.html"
+            ><span>Web</span>Studio</a
+          >
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+        <!-- Блок 2: заголовок + список соцсетей -->
+        <div class="footer-socials">
+          <p class="footer-socials-title">Social media</p>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
